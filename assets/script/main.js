@@ -12,10 +12,8 @@ $('.voices__slick').slick({
 
     slidesToShow: 3,
     slidesToScroll: 3,
-
     centerMode: true,
-    centerPadding: '60px',
-
+    centerPadding: '40px',
     initialSlide: 1, // ★ 2番目を最初に表示（0始まり）
 
     responsive: [
@@ -23,19 +21,10 @@ $('.voices__slick').slick({
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1,
+                slidesToScroll: 3,
                 arrows: false,
                 centerPadding: '40px',
                 initialSlide: 1 // ★ スマホでも2番目スタートにしたいなら入れる
-            }
-        },
-        {
-            breakpoint: 390,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-                centerPadding: '40px',
-                initialSlide: 1 // ★ ここも同様
             }
         }
     ]
