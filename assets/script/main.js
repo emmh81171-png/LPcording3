@@ -20,10 +20,10 @@ $('.voices__slick').slick({
         {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 3,
                 arrows: false,
-                centerPadding: '60px',
+                centerPadding: '200px',
                 initialSlide: 1 // ★ スマホでも2番目スタートにしたいなら入れる
             }
 
