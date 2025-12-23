@@ -13,19 +13,31 @@ $('.voices__slick').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true,
-    centerPadding: '40px',
+    centerPadding: '74px',
     initialSlide: 1, // ★ 2番目を最初に表示（0始まり）
 
     responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                arrows: false,
+                centerPadding: '60px',
+                initialSlide: 1 // ★ スマホでも2番目スタートにしたいなら入れる
+            }
+
+        },
         {
             breakpoint: 768,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 3,
                 arrows: false,
-                centerPadding: '40px',
+                centerPadding: '33px',
                 initialSlide: 1 // ★ スマホでも2番目スタートにしたいなら入れる
             }
+
         }
     ]
 });
